@@ -54,7 +54,7 @@ const content = [
 
 export function MyPorto() {
     return (
-        <div className="w-auto h-auto bg-transparent no-scrollbar">
+        <div className="w-auto h-auto bg-transparent no-scrollbar mb-40">
             <StickyScroll content={content} />
         </div>
     );
