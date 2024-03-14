@@ -2,6 +2,7 @@
 import React from "react";
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
 import Image from "next/image";
+import { cn } from "@/utils/cn";
 
 const content = [
     {
@@ -52,10 +53,15 @@ const content = [
     },
 ];
 
-export function MyPorto() {
+export function SoftSkills() {
     return (
         <div className="w-auto h-auto bg-transparent no-scrollbar mb-40">
+            <h1 className={cn("md:text-4xl text-xl text-center mb-32 text-white relative z-20")}>
+                Soft Skills
+            </h1>
             <StickyScroll content={content} />
         </div>
     );
 }
+
+
