@@ -10,12 +10,12 @@ import { motion } from 'framer-motion';
 import { Spotlight } from '../ui/Spotlight';
 
 export default function Hero() {
-    const TEXT_PROFILE = "Hey, I'm Rio Mulya Syawal, a web developer specialist. Immersed in the world of coding, As a self-taught developer, I've cultivated my skills by seamlessly merging artistic creativity with technical prowess. Specializing in front-end development, I craft seamless and visually captivating user experiences. "
+    const TEXT_PROFILE = "Hey, I'm Rio Mulya Syawal, a web developer specialist. Immersed in the world of coding, As a self-taught developer, I've cultivated my skills by seamlessly merging artistic creativity with technical prowess. I craft seamless and visually captivating user experiences. "
 
     return (
         <div className=" mb-72" >
             <Spotlight
-                className="-top-40 left-0 xl:left-60 xl:-top-72"
+                className="-top-40 left-0 xl:left-60 xl:-top-96"
                 fill="white"
             />
             <div className=" grid grid-cols-2">
@@ -30,7 +30,7 @@ export default function Hero() {
                     {/* <p className="text-center mt-2 text-neutral-300 relative z-20"> */}
                     <TextGenerateEffect words={TEXT_PROFILE} className='font-mono font-light text-xl text-black' />
                     {/* </p> */}
-                    <button className="cursor-pointer inline-flex h-12 mt-3 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <button className="cursor-pointer bg-inherit inline-flex h-12 mt-3 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         <a href="#">
                             Resume
                         </a>

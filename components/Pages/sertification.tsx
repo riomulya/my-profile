@@ -3,6 +3,7 @@ import React from "react";
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
 import Image from "next/image";
 import { cn } from "@/utils/cn";
+import { motion } from "framer-motion";
 
 const content = [
     {
@@ -53,14 +54,18 @@ const content = [
     },
 ];
 
-export function SoftSkills() {
+export function Sertification() {
     return (
-        <div className="w-auto h-auto bg-transparent no-scrollbar mb-40">
+        <motion.section id="#Skill" className="w-auto h-auto bg-transparent no-scrollbar mb-40"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 10, ease: "backOut" }}
+        >
             <h1 className={cn("md:text-4xl text-xl text-center mb-32 text-white relative z-20")}>
-                Soft Skills
+                Sertification
             </h1>
             <StickyScroll content={content} />
-        </div>
+        </motion.section>
     );
 }
 

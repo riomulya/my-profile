@@ -12,7 +12,7 @@ export function Navbar() {
             icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
-            name: "Skil",
+            name: "Skill",
             link: "/about",
             icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
