@@ -27,7 +27,7 @@ export const TextGenerateEffect = ({
 
     const renderWords = () => {
         return (
-            <motion.div ref={scope}>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3, duration: 2, ease: "easeInOut" }} ref={scope}>
                 {wordsArray.map((word, idx) => {
                     return (
                         <motion.span

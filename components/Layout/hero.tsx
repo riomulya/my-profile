@@ -20,7 +20,7 @@ export default function Hero() {
                     animate={{ width: "30vw", x: 0 }}
                     transition={{ duration: 2, origin: 2 }} className='ml-60 mt-32'>
                     <h1 className={cn("md:text-4xl text-xl text-white relative z-20")}>
-                        Rio Mulya Syawal
+                        Coder Enthusiast
                     </h1>
 
                     {/* <p className="text-center mt-2 text-neutral-300 relative z-20"> */}
