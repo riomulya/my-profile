@@ -14,10 +14,6 @@ export default function Hero() {
 
     return (
         <div className=" mb-72" >
-            <Spotlight
-                className="-top-40 left-0 xl:left-60 xl:-top-96"
-                fill="white"
-            />
             <div className=" grid grid-cols-2">
 
                 <motion.div

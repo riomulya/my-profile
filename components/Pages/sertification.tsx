@@ -4,51 +4,74 @@ import { StickyScroll } from "../ui/sticky-scroll-reveal";
 import Image from "next/image";
 import { cn } from "@/utils/cn";
 import { motion } from "framer-motion";
+import { LampContainer } from "../ui/lamp";
+import bnsp from "@/public/image/sertificate/bnsp-jwd.jpg"
+import vue from "@/public/image/sertificate/vue-sertif.jpg"
+import react_udemy from "@/public/image/sertificate/react-udemy.jpg"
+import jsds from "@/public/image/sertificate/js-ds.jpeg"
 
-const content = [
+const SERTIFICATE = [
     {
-        title: "Collaborative Editing",
+        title: "Junior Web Developer (BNSP)",
         description:
-            "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+            "create a final project using HTML CSS PHP Javascript and MySQL, create a simple library for borrowing books using the CRUD model (Create, Read, Update, Delete) with additional login and sign up authentication features",
         content: (
             <div>
-                Collaborative Editing
-            </div>
-        ),
-    },
-    {
-        title: "Real time changes",
-        description:
-            "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-        content: (
-            <div >
-                {/* <Image
-                    src="/linear.webp"
+                <Image
+                    src={bnsp}
                     width={300}
                     height={300}
                     className="h-full w-full object-cover"
                     alt="linear board demo"
-                /> */}
+                />
             </div>
         ),
     },
     {
-        title: "Version control",
+        title: "Vue - Udemy",
         description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-        content: (
-            <div>
-                Version control
-            </div>
-        ),
-    },
-    {
-        title: "Running out of content",
-        description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+            "learn to make reusable components, use vue animation for better UI/UX, create routing to go to the desired page using vue route, learn state management, use props to throw data to connect each other, use vuex for state management manage state (or data) from applications centrally, making it easier to manage and update state across various components that may be interdependent.",
         content: (
             <div >
-                Running out of content
+                <Image
+                    src={vue}
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover"
+                    alt="linear board demo"
+                />
+            </div>
+        ),
+    },
+    {
+        title: "Javascript Data Structure and Algorithm",
+        description:
+            " I learned about various data structures such as arrays, linked lists, stacks, queues, and trees, as well as commonly used search and sorting algorithms. Emphasis was placed on understanding time and space complexity, aiding in evaluating algorithm performance and selecting efficient solutions for challenges encountered in web development and software engineering overall.",
+        content: (
+            <div>
+                <Image
+                    src={jsds}
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover"
+                    alt="linear board demo"
+                />
+            </div>
+        ),
+    },
+    {
+        title: "React - Udemy",
+        description:
+            " I gained essential skills in React.js, covering topics such as creating reusable components, utilizing React animation for improved UI/UX, implementing routing for seamless page navigation using React Router, managing state with props for efficient data communication between components, and leveraging Redux for centralized state management.",
+        content: (
+            <div>
+                <Image
+                    src={react_udemy}
+                    width={300}
+                    height={300}
+                    className="h-full w-full object-cover"
+                    alt="linear board demo"
+                />
             </div>
         ),
     },
@@ -56,16 +79,27 @@ const content = [
 
 export function Sertification() {
     return (
-        <motion.section id="#Skill" className="w-auto h-auto bg-transparent no-scrollbar mb-40"
+        <motion.section id="#Skill" className="min-w-max bg-transparent no-scrollbar mb-40"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 10, ease: "backOut" }}
         >
-            <h1 className={cn("md:text-4xl text-xl text-center mb-32 text-white relative z-20")}>
-                Sertification
-            </h1>
-            <StickyScroll content={content} />
-        </motion.section>
+            <LampContainer>
+                <motion.h1
+                    initial={{ opacity: 0.5, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: "easeInOut",
+                    }}
+                    className="mt-8 bg-white py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+                >
+                    Sertification
+                </motion.h1>
+            </LampContainer>
+            <StickyScroll content={SERTIFICATE} />
+        </motion.section >
     );
 }
 

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "../ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { IconActivity, IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 
 
 export function Navbar() {
@@ -13,14 +13,21 @@ export function Navbar() {
         },
         {
             name: "Skill",
-            link: "/about",
+            link: "/#Sertification",
             icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
             name: "Project",
-            link: "/Project",
+            link: "/#Projects",
             icon: (
-                <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+                <IconActivity className="h-4 w-4 text-neutral-500 dark:text-white" />
+            ),
+        },
+        {
+            name: "Education",
+            link: "/#Education",
+            icon: (
+                <IconActivity className="h-4 w-4 text-neutral-500 dark:text-white" />
             ),
         },
     ];
