@@ -9,7 +9,7 @@ import { cn } from "../../utils/cn";
 import { motion } from 'framer-motion';
 
 export default function Hero() {
-    const TEXT_PROFILE = "Hey, I'm Rio Mulya Syawal, a web developer specialist. Immersed in the world of coding, As a self-taught developer, I've cultivated my skills by seamlessly merging artistic creativity with technical prowess. I craft seamless and visually captivating user experiences. "
+    const TEXT_PROFILE = "Hey, I'm Rio Mulya Syawal,a web developer specialist.Immersed in the world of coding,As a self-taught developer,I've cultivated my skills by seamlessly merging artistic creativity with technical prowess.I craft seamless and visually captivating user experiences."
 
     return (
         <div className=" mb-72" >

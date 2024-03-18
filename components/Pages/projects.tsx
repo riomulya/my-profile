@@ -146,16 +146,16 @@ export default function Projects() {
                     initial={{ opacity: 0.5, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-                    className="mt-8 bg-white py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+                    className="mt-2 bg-white py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
                 >
                     Projects
                 </motion.h1>
             </LampContainer>
-            <div className='mt-0 mb-20 sm:grid xl:grid-cols-2 sm:grid-cols-1'>
+            <div className='mt-0 mb-10 sm:grid xl:grid-cols-2 sm:grid-cols-1'>
                 {projects.map((project, index) => (
-                    <motion.div key={index} initial={{ x: 500 }}
-                        animate={{ x: 0 }}
-                        transition={{ duration: 2, origin: 1 }}
+                    <motion.div key={index} initial={{ opacity: 0.5, x: 300 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.3, duration: 2, ease: "easeInOut" }}
                     >
                         <CardContainer className="inter-var">
                             <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
