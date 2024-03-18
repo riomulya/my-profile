@@ -20,7 +20,7 @@ export function Education() {
             title: "University of Pamulang GPA(3.71)",
             description: (
                 <>
-                    <TextGenerateEffect words="As a sixth‑semester student majoring in Informatics Engineering at Pamulang University, I possess a keen interest and
+                    <TextGenerateEffect words="As a student majoring in Informatics Engineering at Pamulang University, I possess a keen interest and
                     proficiency in user interface(UI) development and web applications using technologies such as Vue.js, React JS, HTML, CSS,
                     PHP, JavaScript, Typescript, Node Js.My goal is to continue learning and contribute to the development of innovative and
                     captivating applications." />
@@ -39,7 +39,7 @@ export function Education() {
                     {educationData.map((item, index) => (
                         <motion.div initial={{ opacity: 0.5, x: -300 }}
                             whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.3, duration: 2, ease: "easeInOut" }} key={`education-${index}`} className="mb-10">
+                            transition={{ delay: 0.3, duration: 2, ease: "easeInOut" }} key={`education-${index}`} className="mb-10 mx-5">
                             <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
                                 {item.badge}
                             </h2>

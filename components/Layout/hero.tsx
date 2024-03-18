@@ -31,7 +31,7 @@ export default function Hero() {
                 </motion.div>
                 <motion.div initial={{ x: 500 }}
                     animate={{ x: 0 }}
-                    transition={{ duration: 2, origin: 1 }} className='flex justify-center'>
+                    transition={{ duration: 2, origin: 1 }} className='flex justify-center mx-5'>
                     <CardContainer className="inter-var">
                         <CardBody className="bg-transparent relative group/card h-auto rounded-xl p-6 border">
                             <CardItem translateZ="100" className="w-full mt-4">
