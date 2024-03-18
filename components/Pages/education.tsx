@@ -33,7 +33,7 @@ export function Education() {
     ];
 
     return (
-        <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3, duration: 2, ease: "easeInOut" }} className="my-40">
+        <motion.section id="Education" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.3, duration: 2, ease: "easeInOut" }} className="my-40">
             <TracingBeam className="px-6">
                 <div className="max-w-2xl mx-auto antialiased pt-4 relative">
                     {educationData.map((item, index) => (

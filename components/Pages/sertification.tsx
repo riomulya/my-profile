@@ -79,7 +79,7 @@ const SERTIFICATE = [
 
 export function Sertification() {
     return (
-        <motion.section id="#Skill" className="min-w-max bg-transparent no-scrollbar mb-40"
+        <motion.section id="Skill" className="min-w-max bg-transparent no-scrollbar mb-40"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 10, ease: "backOut" }}

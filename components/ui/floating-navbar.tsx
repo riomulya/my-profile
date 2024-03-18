@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { Link } from "react-scroll"
 import {
     motion,
     AnimatePresence,
@@ -7,7 +8,6 @@ import {
     useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "@/utils/cn";
-import Link from "next/link";
 
 export const FloatingNav = ({
     navItems,
@@ -63,9 +63,13 @@ export const FloatingNav = ({
                 {navItems.map((navItem: any, idx: number) => (
                     <Link
                         key={`link=${idx}`}
-                        href={navItem.link}
+                        to={navItem.link}
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={5000}
                         className={cn(
-                            "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+                            "relative cursor-pointer dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
                         )}
                     >
                         <span className="block sm:hidden">{navItem.icon}</span>
