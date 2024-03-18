@@ -12,7 +12,7 @@ import jsds from "@/public/image/sertificate/js-ds.jpeg"
 
 const SERTIFICATE = [
     {
-        title: "Junior Web Developer (BNSP)",
+        title: "Junior Web Developer(BNSP)",
         description:
             "create a final project using HTML CSS PHP Javascript and MySQL, create a simple library for borrowing books using the CRUD model (Create, Read, Update, Delete) with additional login and sign up authentication features",
         content: (
@@ -44,7 +44,7 @@ const SERTIFICATE = [
         ),
     },
     {
-        title: "Javascript Data Structure and Algorithm",
+        title: "Data Structure and Algorithm",
         description:
             " I learned about various data structures such as arrays, linked lists, stacks, queues, and trees, as well as commonly used search and sorting algorithms. Emphasis was placed on understanding time and space complexity, aiding in evaluating algorithm performance and selecting efficient solutions for challenges encountered in web development and software engineering overall.",
         content: (
@@ -98,9 +98,7 @@ export function Sertification() {
                     Sertification
                 </motion.h1>
             </LampContainer>
-            <StickyScroll content={SERTIFICATE} />
+            <StickyScroll content={SERTIFICATE} contentClassName="" />
         </motion.section >
     );
 }
-
-

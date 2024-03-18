@@ -7,18 +7,17 @@ import profile from "@/public/image/profile.png"
 import { CardItem, CardBody, CardContainer } from "@/components/ui/3d-card";
 import { cn } from "../../utils/cn";
 import { motion } from 'framer-motion';
-import { Spotlight } from '../ui/Spotlight';
 
 export default function Hero() {
     const TEXT_PROFILE = "Hey, I'm Rio Mulya Syawal, a web developer specialist. Immersed in the world of coding, As a self-taught developer, I've cultivated my skills by seamlessly merging artistic creativity with technical prowess. I craft seamless and visually captivating user experiences. "
 
     return (
         <div className=" mb-72" >
-            <div className=" grid grid-cols-2">
-
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-4">
                 <motion.div
-                    animate={{ width: "30vw", x: 0 }}
-                    transition={{ duration: 2, origin: 2 }} className='ml-60 mt-32'>
+                    initial={{ x: -500 }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 2, origin: 1 }} className='xl:ml-60 ml-10 mt-32'>
                     <h1 className={cn("md:text-4xl text-xl text-white relative z-20")}>
                         Coder Enthusiast
                     </h1>
@@ -32,9 +31,9 @@ export default function Hero() {
                         </a>
                     </button>
                 </motion.div>
-                <motion.div initial={{ width: "0vw", x: "50vw" }}
-                    animate={{ width: "50vw", x: 0 }}
-                    transition={{ duration: 2, origin: 1 }}>
+                <motion.div initial={{ x: 500 }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 2, origin: 1 }} className='flex justify-center'>
                     <CardContainer className="inter-var">
                         <CardBody className="bg-transparent relative group/card h-auto rounded-xl p-6 border">
                             <CardItem translateZ="100" className="w-full mt-4">

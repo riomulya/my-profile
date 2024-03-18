@@ -153,8 +153,8 @@ export default function Projects() {
             </LampContainer>
             <div className='mt-0 mb-20 sm:grid xl:grid-cols-2 sm:grid-cols-1'>
                 {projects.map((project, index) => (
-                    <motion.div key={index} initial={{ width: "0vw", x: "50vw" }}
-                        whileInView={{ width: "50vw", x: 0 }}
+                    <motion.div key={index} initial={{ x: 500 }}
+                        animate={{ x: 0 }}
                         transition={{ duration: 2, origin: 1 }}
                     >
                         <CardContainer className="inter-var">
