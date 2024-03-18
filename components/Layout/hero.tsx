@@ -17,14 +17,12 @@ export default function Hero() {
                 <motion.div
                     initial={{ x: -500 }}
                     animate={{ x: 0 }}
-                    transition={{ duration: 2, origin: 1 }} className='xl:ml-60 ml-10 mt-32'>
+                    transition={{ duration: 2, origin: 1 }} className='xl:ml-60 mx-5 mt-32'>
                     <h1 className={cn("md:text-4xl text-xl text-white relative z-20")}>
                         Coder Enthusiast
                     </h1>
 
-                    {/* <p className="text-center mt-2 text-neutral-300 relative z-20"> */}
                     <TextGenerateEffect words={TEXT_PROFILE} className='font-mono font-light text-xl text-black' />
-                    {/* </p> */}
                     <button className="cursor-pointer bg-inherit inline-flex h-12 mt-3 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         <a href="#">
                             Resume
